@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TeenSupport Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>TeenSupport Hub</h1>
+  <nav>
+    <a href="#bullying">Bullying Help</a>
+    <a href="#careers">Career Advice</a>
+    <a href="#jobs">Job Board</a>
+    <a href="#forum">Advice</a>
+    <a href="#chat">Chatbot</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>You Are Not Alone 💙</h2>
+  <p>A safe place for teens to get help and guidance.</p>
+</section>
+
+<section id="bullying">
+  <h2>Bullying Help</h2>
+  <p>If you are being bullied:</p>
+  <ul>
+    <li>Stay calm and avoid reacting emotionally.</li>
+    <li>Tell a trusted adult or school counselor.</li>
+    <li>Keep evidence of online bullying.</li>
+    <li>Block and report online bullies.</li>
+  </ul>
+</section>
+
+<section id="careers">
+  <h2>Career & Subject Advice</h2>
+  <p>Want to be a doctor? Take Biology, Chemistry & Math.</p>
+  <p>Want to be an engineer? Focus on Math & Physics.</p>
+  <p>Want to work in IT? Take Computer Science & Math.</p>
+</section>
+
+<section id="jobs">
+  <h2>Job Board</h2>
+  <form id="jobForm">
+    <input type="text" id="jobTitle" placeholder="Job Title" required>
+    <input type="text" id="jobDesc" placeholder="Job Description" required>
+    <button type="submit">Submit Job</button>
+  </form>
+  <div id="jobList"></div>
+</section>
+
+<section id="forum">
+  <h2>Teen Advice Forum</h2>
+  <form id="adviceForm">
+    <input type="text" id="adviceText" placeholder="Share your advice..." required>
+    <button type="submit">Post Advice</button>
+  </form>
+  <div id="adviceList"></div>
+</section>
+
+<section id="chat">
+  <h2>Ask Teeva 🤖</h2>
+  <div id="chatBox"></div>
+  <input type="text" id="userInput" placeholder="Type your question...">
+  <button onclick="sendMessage()">Send</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
